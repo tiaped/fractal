@@ -11,6 +11,10 @@ public class Point {
         this.y = y;
     }
 
+    public Point(double x, double y) {
+        this(BigDecimal.valueOf(x), BigDecimal.valueOf(y));
+    }
+
     @Override
     public String toString() {
         return "Point["+x.toPlainString()+","+y.toPlainString()+"]";

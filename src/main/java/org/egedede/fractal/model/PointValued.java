@@ -8,6 +8,10 @@ import javax.persistence.Entity;
 @Entity
 public class PointValued {
 
+    public PointValued(Point point, Integer nbIteration) {
+        this.point = point;
+        this.nbIteration = nbIteration;
+    }
 
     public Point point;
 
